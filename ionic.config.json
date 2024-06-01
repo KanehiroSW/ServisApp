@@ -1,0 +1,7 @@
+{
+  "name": "ServisApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

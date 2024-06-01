@@ -1,0 +1,18 @@
+<ion-header >
+  <ion-toolbar color="primary">
+    <ion-title class="finalizado" >Reporte Finalizado</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="salir()">
+        <ion-icon slot="icon-only" name="exit"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="generado">
+    <ion-img src="assets/imagenes/logito_aprobado.png" alt="Logo de aprobado"></ion-img>
+    <ion-title size="large">REPORTE GENERADO CON ÉXITO!</ion-title>
+    <ion-img src="assets/imagenes/logito.png" alt="logit1"></ion-img>
+  </div>
+</ion-content>

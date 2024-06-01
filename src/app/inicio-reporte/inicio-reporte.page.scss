@@ -1,0 +1,75 @@
+ion-note {
+    display: block;
+  }
+
+  /* inicio-reporte.page.scss */
+
+ion-content {
+    --background: #f4f4f4; /* Color de fondo principal */
+  }
+  .usuario {
+    ion-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Centra el contenido horizontalmente */
+      justify-content: center; /* Centra el contenido verticalmente */
+      text-align: center; /* Asegura que el texto esté centrado */
+      background-color: #4699f1;
+      
+      ion-avatar {
+        margin-bottom: 10px; /* Espacio entre el avatar y el texto */
+      }
+  
+      h5 {
+        margin: 0; /* Elimina los márgenes predeterminados */
+      }
+    }
+  }
+  
+  
+  ion-item {
+    --padding-start: 0; /* Elimina el espacio al principio de los elementos */
+  }
+  
+  ion-button {
+    --background: #007bff; /* Color de fondo del botón */
+    --color: #fff; /* Color del texto del botón */
+    border-radius: 8px; /* Bordes redondeados del botón */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 20px; /* Espacio superior del botón */
+  }
+  
+  ion-button:hover {
+    --background: #0056b3; /* Cambio de color al pasar el ratón */
+  }
+  
+  ion-note {
+    font-size: 14px; /* Tamaño del texto de la nota */
+    margin-top: 20px; /* Espacio superior de la nota */
+  }
+  
+  ion-select {
+    width: 100%; /* Ancho completo del select */
+  }
+  
+  ion-textarea {
+    width: 100%; /* Ancho completo del textarea */
+  }
+  
+  /* Opcional: Estilos para los títulos */
+  ion-label h1 {
+    font-size: 24px; /* Tamaño del título principal */
+    text-align: center;
+  }
+  
+  ion-label h2 {
+    font-size: 20px; /* Tamaño del título secundario */
+    text-align: center;
+  }
+   ion-img{
+    display: block;
+    width: 120px;
+    height: auto;
+    max-height: 120px;
+    margin:auto;
+  }

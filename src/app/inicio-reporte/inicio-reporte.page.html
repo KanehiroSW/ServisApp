@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="inicio-reporte.page.scss">
+<ion-content [fullscreen]="true">
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu de Usuario</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="usuario"> 
+        <ion-header>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <h5>ESTUDIANTE:</h5>
+          <h5>Moises Morales</h5>
+        <h5>7002640253</h5>
+      </ion-header>
+      </div>
+      <br>
+      <ion-item button detail="true">
+        <ion-label>
+          <h3>Iditar Perfil</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item button detail="true">
+        <ion-label>
+          <h3>Mis Ordenes</h3>
+        </ion-label>
+      </ion-item>
+      <ion-button id="open-loading">Cerrar Sesión</ion-button>
+      <ion-loading trigger="open-loading" message="Dismissing after 3 seconds..." duration="3000"></ion-loading>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary" >
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>INICIO REPORTE</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-label color="primary">
+        <h1>REPORTE DE INCIDENTE</h1>
+      </ion-label>
+      <br>
+      <ion-label color="danger">
+        <h2>NUEVO INCIDENTE</h2>
+        <ion-img src="assets/imagenes/ucv_logito4.png" alt="Logito4"></ion-img>
+      </ion-label>
+      <ion-item>
+        <ion-select label="Select" placeholder="Selecciona el Servicio" required>
+          <ion-select-option value="">Mantenimiento</ion-select-option>
+          <ion-select-option value="seg">Seguridad</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-input inputmode="descripcion" labelPlacement="stacked" placeholder="Describir la zona de la ocurrencia" required>
+          <code slot="label">Descripcion de Zona</code>
+        </ion-input>
+      </ion-item>
+      <ion-list [inset]="true">
+        <ion-item>
+          <ion-textarea label="Descripcion del caso " labelPlacement="floating" rows="5" required></ion-textarea>
+        </ion-item>
+      </ion-list>
+      <ion-note color="medium" class="ion-margin-horizontal">
+        IMPORTANTE! Describir el caso cn detalles para que nos ayude a revisar mas rapido su solicitud.
+      </ion-note>
+      <br>
+      <ion-button id="generarReporte" [routerLink]="['/reporte-generado']">REPORTAR</ion-button>
+      <ion-loading trigger="generar-reporte" message="Sending the report after 2 seconds....." duration="3000"></ion-loading>
+    </ion-content>
+  </div>
+</ion-content>
